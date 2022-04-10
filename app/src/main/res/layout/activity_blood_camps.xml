@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BloodCampsActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+        android:background="#E32636"
+        tools:ignore="MissingConstraints"
+        android:actionMenuTextColor="#000"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="135dp"
+        android:src="@drawable/camp_bg" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/textview_border">
+
+
+        <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_person"                android:drawablePadding="10dp"
+                android:textColor="#000"
+                android:hint="Place Name: "
+                android:textColorHint="#000"
+                android:textSize="18sp" />
+
+
+            <TextView
+                android:id="@+id/placename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:hint="placename"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/textview_border">
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/location_city_24"
+            android:drawablePadding="10dp"
+            android:textColor="#000"
+            android:hint="Address : "
+            android:textColorHint="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="address"
+            android:drawablePadding="10dp"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textColorHint="#000"
+            />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/textview_border">
+
+
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/landmark_24"
+            android:drawablePadding="10dp"
+            android:textColor="#000"
+            android:hint="Landmark: "
+            android:textColorHint="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/landmark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="landmark"
+            android:drawablePadding="10dp"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textColorHint="#000"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/textview_border">
+
+
+
+        <TextView
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_phone"
+            android:drawablePadding="10dp"
+            android:textColor="#000"
+            android:hint="Phone : "
+            android:textColorHint="#000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/phonenumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="phonenumber"
+            android:inputType="number"
+            android:drawablePadding="10dp"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textColorHint="#000"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/textview_border">
+
+
+
+        <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/date_range_24"
+                    android:drawablePadding="10dp"
+                    android:textColor="#000"
+                    android:hint="Date: "
+                    android:textColorHint="#000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/disable_past_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Date"
+                    android:drawablePadding="10dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textColorHint="#000"/>
+
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/textview_border">
+
+
+
+        <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/time_24"
+                    android:drawablePadding="10dp"
+                    android:textColor="#000"
+                    android:hint="From Time: "
+                    android:textColorHint="#000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/from_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="time"
+                    android:inputType="number"
+                    android:drawablePadding="10dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textColorHint="#000"/>
+
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/textview_border">
+
+
+
+        <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/time_24"
+                    android:drawablePadding="10dp"
+                    android:textColor="#000"
+                    android:hint="To Time: "
+                    android:textColorHint="#000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/to_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="time"
+                    android:inputType="number"
+                    android:drawablePadding="10dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textColorHint="#000"/>
+
+            </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

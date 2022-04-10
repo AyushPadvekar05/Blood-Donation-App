@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".InformationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E32636"/>
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_margin="5dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#ff0000"
+            android:textAllCaps="true"
+            android:text="Hospital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/slide1"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:justificationMode="inter_word"
+            android:text="\n\t\tThere are several parameters that determine the eligibility of an individual to donate blood. Guidelines laid down by the Ministry of Health, Government of India have to be followed by blood banks for donor screening."
+            android:textColor="#393939"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#000"
+            android:layout_marginStart="65dp"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#ff0000"
+            android:textAllCaps="true"
+            android:text="Overall health and vital signs:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#000"
+            android:layout_marginStart="65dp"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:inputType="textMultiLine"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:justificationMode="inter_word"
+            android:singleLine="false"
+            android:text="1) The donor must be fit and healthy, and should not be suffering from transmittable diseases.
+            \n2) Age and weight- Between 18–65 years old and should weigh a minimum of 50  kg.
+            \n3) Pulse rate- Between 50 and 100 without irregularities.
+            \n4) Hemoglobin level- A minimum of 12.5 g/dL.
+            \n5) Blood pressure- Diastolic: 50–100 mm Hg, Systolic: 100–180 mm Hg.
+            \n6) Body temperature- Should be normal, with an oral temperature not exceeding 37.5 °C.
+            \n7) The time period between successive blood donations should be more than 3 months.\n"
+            android:textColor="#393939"
+            android:layout_marginBottom="10dp"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText,UnusedAttribute" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#000"
+            android:layout_marginStart="65dp"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#ff0000"
+            android:textAllCaps="true"
+            android:text=" Individuals under certain conditions are deemed ineligible to donate blood:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#000"
+            android:layout_marginStart="65dp"
+            android:layout_margin="10dp"/>
+
+        <ImageView
+            android:layout_width="392dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/slide3" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:inputType="textMultiLine"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:justificationMode="inter_word"
+            android:singleLine="false"
+            android:text="\n1) Have been tested HIV positive.
+           \n2)Suffering from ailments like cardiac arrest, hypertension, blood pressure, cancer, epilepsy, kidney ailments and diabetes.
+            \n3) Have had ear/body piercing or tattoo in the past 6 months.
+            \n4) Have undergone immunization in the past 1 month.
+            \n5) Treated for rabies or received Hepatitis B vaccine in the past 6 months.
+            \n6) Consumed alcohol in the past 24 hours.
+            \n7)Undergone major dental procedures or general surgeries in the past 1 month.
+            \n8) Had fits, tuberculosis or allergic disorders in the past.
+            \n9)Have asthma with active symptoms, and severe asthma patients.\n"
+            android:textColor="#393939"
+            android:layout_marginBottom="10dp"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText,UnusedAttribute" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#000"
+            android:layout_marginStart="65dp"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#ff0000"
+            android:textAllCaps="true"
+            android:text="Steps to follow to make a donation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#000"
+            android:layout_marginStart="65dp"
+            android:layout_margin="10dp"/>
+
+
+        <ImageView
+            android:layout_width="392dp"
+            android:layout_height="200dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/slide2" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:justificationMode="inter_word"
+            android:text="1)Registration\n
+\nYou will see a doctor who will check your identity documents, log your data into the Transfusion System database and help you fill in the pre-donation questionnaire.
+\n\n2)Suitability\n
+\nSmall blood samples will be taken every time you go to give blood; these will be tested before donation and you will have a confidential chat with a doctor and an evaluation of your suitability as a donor. Complete confidentiality will be observed, in full respect of both donor and recipient’s privacy.
+\n\n3)The procedure\n
+\nThe blood and hemocomponents are obtained by trained and qualified health professionals, using a simple and safe procedure. All the equipment is single-use only, with no risk to the donor.
+\n\n4)Post donation\n
+\nYou will be offered a snack after giving blood. Don’t forget that, if you are an employee, you are entitled to take a day off on full pay."
+            android:textColor="#393939"
+            android:textSize="16sp"
+            android:inputType="textMultiLine"
+            tools:ignore="HardcodedText,TextViewEdits" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#000"
+            android:layout_marginStart="65dp"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_margin="5dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#ff0000"
+            android:textAllCaps="true"
+            android:text="Conditions for blood donation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:background="#000"
+            android:layout_marginStart="65dp"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:justificationMode="inter_word"
+            android:singleLine="false"
+            android:text="You will be allowed to give blood if:\n
+            \n1)you are aged between 18 and 65
+            \n2)A doctor says you are a suitable donor
+            \n3)You weigh at least 50 Kg."
+            android:textColor="#393939"
+            android:layout_marginBottom="10dp"
+            android:textSize="16sp"
+            tools:ignore="HardcodedText,UnusedAttribute" />
+
+
+
+
+
+    </LinearLayout>
+
+    </ScrollView>

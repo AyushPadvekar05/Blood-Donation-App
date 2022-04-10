@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View_Other_Profile">
+
+    <LinearLayout
+        android:id="@+id/mainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#E32636"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" />
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"
+            android:text="Type"
+            android:textAllCaps="true"
+            android:textColor="#ff0000"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userProfileImage1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:padding="10dp"
+            android:src="@drawable/profile_image"
+            app:civ_border_width="2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/textview_border"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_person"                android:drawablePadding="10dp"
+                android:textColor="#000"
+                android:hint="Name: "
+                android:textColorHint="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/userName1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:hint="User Name"
+                android:textAlignment="textStart"
+                android:textAllCaps="true"
+                android:textColor="#000"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/textview_border"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_mail"                android:drawablePadding="10dp"
+                android:textColor="#000"
+                android:hint="Email: "
+                android:textColorHint="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/userEmail1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:hint="Email"
+                android:textAlignment="textStart"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/textview_border"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_phone"                android:drawablePadding="10dp"
+                android:textColor="#000"
+                android:hint="Phone: "
+                android:textColorHint="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/phoneNumber1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:hint="Phone"
+                android:textSize="18sp"
+                android:textAlignment="textStart"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/textview_border"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_bloodtype_24"                android:drawablePadding="10dp"
+                android:textColor="#000"
+                android:hint="Blood Group: "
+                android:textColorHint="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/bloodGroup1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:hint="Blood Group"
+                android:textSize="18sp"
+                android:textAlignment="textStart"
+                android:textColor="#000" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+        <Button
+            android:id="@+id/emailNow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="5dp"
+            android:background="@drawable/buttons_background"
+            android:text="Email"
+            android:textAllCaps="false"
+            android:visibility="gone" />
+
+
+
+
+</RelativeLayout>

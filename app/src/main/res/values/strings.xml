@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Blood Donation</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="open" />
+    <string name="close" />
+
+    <string-array name="bloodgroups">
+        <item>Select your blood group</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+    </string-array>
+
+    <string name="Q1">Will it hurt when you insert the needle?</string>
+    <string name="Ans1">Only for a moment. Pinch the fleshy, soft underside of your arm. That pinch is similar to what you will feel when the needle is inserted.</string>
+
+    <string name="Q2">How long does a blood donation take?</string>
+    <string name="Ans2">The entire process takes about one hour and 15 minutes; the actual donation of a pint of whole blood unit takes eight to 10 minutes. However, the time varies slightly with each person depending on several factors including the donor’s health history and attendance at the blood drive.</string>
+
+    <string name="Q7">Will it hurt when you insert the needle?</string>
+    <string name="Ans7">Only for a moment. Pinch the fleshy, soft underside of your arm. That pinch is similar to what you will feel when the needle is inserted.</string>
+
+    <string name="Q6">How long will it take to replenish the pint of blood I donate?</string>
+    <string name="Ans6">The plasma from your donation is replaced within about 24 hours. Red cells need about four to six weeks for complete replacement. That’s why at least eight weeks are required between whole blood donations.</string>
+
+    <string name="Q5">How often can I donate blood?</string>
+    <string name="Ans5">You must wait at least eight weeks (56 days) between donations of whole blood and 16 weeks (112 days) between Power Red donations. Whole blood donors can donate up to 6 times a year. Platelet apheresis donors may give every 7 days up to 24 times per year. Regulations are different for those giving blood for themselves (autologous donors).</string>
+
+    <string name="Q4">Who can donate blood?</string>
+    <string name="Ans4">In most states, donors must be age 17 or older. Some states allow donation by 16-year-olds with a signed parental consent form. Donors must weigh at least 110 pounds and be in good health. Additional eligibility criteria apply.</string>
+
+    <string name="Q3">What should I do after donating blood?</string>
+    <string name="Ans3">1) Drink an extra four glasses (eight ounces each) of non-alcoholic liquids.
+\n2) Keep your bandage on and dry for the next five hours, and do not do heavy exercising or lifting.
+\n3) If the needle site starts to bleed, raise your arm straight up and press on the site until the bleeding stops.
+\n4) Because you could experience dizziness or loss of strength, use caution if you plan to do anything that could put you or others at risk of harm. For any hazardous occupation or hobby, follow applicable safety recommendations regarding your return to these activities following a blood donation.
+\n5) Eat healthy meals and consider adding iron-rich foods to your regular diet, or discuss taking an iron supplement with your health care provider, to replace the iron lost with blood donation.
+\n6) If you get a bruise:  Apply ice to the area intermittently for 10-15 minutes during the first 24 hours. Thereafter, apply warm, moist heat to the area intermittently for 10-15 minutes. A rainbow of colors may occur for about 10 days.
+\n7) If you get dizzy or lightheaded:  Stop what you are doing, lie down, and raise your feet until the feeling passes and you feel well enough to safely resume activities.
+\n8) And remember to enjoy the feeling of knowing you have helped save lives!
+\n9) Schedule your next appointment.</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

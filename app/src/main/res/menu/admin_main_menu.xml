@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_myfeed"
+        android:title="Home"/>
+
+    <item
+        android:id="@+id/sentEmail"
+        android:visible="false"
+        android:icon="@drawable/ic_check"
+        android:title="Donors Emailed"/>
+
+    <item
+        android:id="@+id/Donor"
+        android:icon="@drawable/bloodcamp"
+        android:title="Donor"/>
+    <item
+        android:id="@+id/Recipient"
+        android:icon="@drawable/bloodbank"
+        android:title="Recipient"/>
+
+    <item android:title="Updates">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/BloodCamps"
+                    android:icon="@drawable/bloodcamp"
+                    android:title="Blood Camps"/>
+                <item
+                    android:id="@+id/BloodBank"
+                    android:icon="@drawable/bloodbank"
+                    android:title="Blood Banks"/>
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Actions">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/profile"
+                    android:icon="@drawable/ic_profile"
+                    android:title="Profile Update"/>
+                <item
+                    android:id="@+id/notifications"
+                    android:visible="false"
+                    android:icon="@drawable/ic_notifications"
+                    android:title="Notifications"/>
+                <item
+                    android:id="@+id/logout"
+                    android:icon="@drawable/ic_logout"
+                    android:title="Log Out"/>
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Communicate">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/about"
+                    android:icon="@drawable/ic_about"
+                    android:title="About"/>
+                <item
+                    android:id="@+id/share"
+                    android:icon="@drawable/ic_share"
+                    android:title="Share"/>
+
+            </group>
+        </menu>
+    </item>
+
+</menu>

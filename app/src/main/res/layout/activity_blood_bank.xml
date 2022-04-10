@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recyclerview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BloodBank">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+        android:background="#E32636"
+        tools:ignore="MissingConstraints"
+        android:actionMenuTextColor="#000"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="121dp"
+        android:src="@drawable/bank_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:padding="10dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/textview_border">
+
+            <TextView
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_bloodtype_24"
+                android:drawablePadding="10dp"
+                android:textColor="#000"
+                android:hint="A+ :"
+                android:textColorHint="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/A_positive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="A+"
+                android:inputType="number"
+                android:textStyle="bold"
+                android:drawablePadding="10dp"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textColorHint="#000"/>
+
+    </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:padding="10dp"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/textview_border">
+
+
+
+            <TextView
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_bloodtype_24"
+                android:drawablePadding="10dp"
+                android:textColor="#000"
+                android:hint="A- : "
+                android:textColorHint="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/A_negative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="A-"
+                android:inputType="number"
+                android:textStyle="bold"
+                android:drawablePadding="10dp"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textColorHint="#000"/>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/textview_border">
+
+
+
+        <TextView
+            android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_bloodtype_24"
+                android:drawablePadding="10dp"
+                android:textColor="#000"
+                android:hint="B+ : "
+                android:textColorHint="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/B_positive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="B+"
+                android:inputType="number"
+                android:textStyle="bold"
+                android:drawablePadding="10dp"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textColorHint="#000"/>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/textview_border">
+
+
+
+        <TextView
+            android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_bloodtype_24"
+                android:drawablePadding="10dp"
+                android:textColor="#000"
+                android:hint="B- : "
+                android:textColorHint="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/B_negative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="B-"
+                android:inputType="number"
+                android:textStyle="bold"
+                android:drawablePadding="10dp"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textColorHint="#000"/>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/textview_border">
+
+
+
+        <TextView
+            android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_bloodtype_24"
+                android:drawablePadding="10dp"
+                android:textColor="#000"
+                android:hint="O+ : "
+                android:textColorHint="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/O_positive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="O+"
+                android:inputType="number"
+                android:textStyle="bold"
+                android:drawablePadding="10dp"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textColorHint="#000"/>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/textview_border">
+
+
+
+
+        <TextView
+            android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_bloodtype_24"
+                android:drawablePadding="10dp"
+                android:textColor="#000"
+                android:hint="O- : "
+                android:textColorHint="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/O_negative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="O-"
+                android:inputType="number"
+                android:textStyle="bold"
+                android:drawablePadding="10dp"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textColorHint="#000"/>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/textview_border">
+
+
+            <TextView
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_bloodtype_24"
+                android:drawablePadding="14dp"
+                android:hint="AB+ : "
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/AB_positive"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="AB+"
+                android:inputType="number"
+                android:textStyle="bold"
+                android:drawablePadding="10dp"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textColorHint="#000"/>
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/textview_border">
+
+
+
+        <TextView
+            android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_baseline_bloodtype_24"
+                android:drawablePadding="10dp"
+                android:textColor="#000"
+                android:hint="AB- : "
+                android:textColorHint="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/AB_negative"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="AB-"
+                android:textStyle="bold"
+                android:inputType="number"
+                android:drawablePadding="10dp"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textColorHint="#000"/>
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Read"
+        android:text="Read"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="20sp"
+        android:background="@drawable/buttons_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/activity_main_piechart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
+
+
+
+</LinearLayout>

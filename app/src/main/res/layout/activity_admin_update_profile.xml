@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin_Update_Profile"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.PopupTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#E32636"/>
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_margin="5dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#ff0000"
+        android:textAllCaps="true"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="Admin Profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileImage"
+        android:src="@drawable/hospital_icon"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:layout_width="100dp"
+        app:civ_border_width="2dp"
+        android:layout_height="100dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_marginBottom="20dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextInputLayoutStyle"
+            app:boxStrokeColor="#000"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            app:hintTextAppearance="@color/colorPrimary"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter name"
+                android:drawablePadding="10dp"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textColorHint="#000"
+                android:drawableStart="@drawable/ic_person"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextInputLayoutStyle"
+            app:boxStrokeColor="#000"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            app:hintTextAppearance="@color/colorPrimary"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Phone Number"
+                android:drawablePadding="10dp"
+                android:inputType="number"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textColorHint="#000"
+                android:drawableStart="@drawable/ic_phone"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextInputLayoutStyle"
+            app:boxStrokeColor="#000"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            app:hintTextAppearance="@color/colorPrimary"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Email"
+                android:inputType="textEmailAddress"
+                android:drawablePadding="10dp"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textColorHint="#000"
+                android:drawableStart="@drawable/ic_mail"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/TextInputLayoutStyle"
+            app:boxStrokeColor="#000"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            app:hintTextAppearance="@color/colorPrimary"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:inputType="text"
+                android:drawablePadding="10dp"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textColorHint="#000"
+                android:drawableStart="@drawable/location_city_24"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/update"
+        android:text="Update"
+        android:textAllCaps="false"
+        android:layout_gravity="center"
+        android:textColor="#fff"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="20sp"
+        android:background="@drawable/buttons_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:enabled="false"/>
+
+
+</LinearLayout>
